@@ -19,8 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 
-/* #define USE_SERIAL */
-#define USE_I2C
+#define USE_SERIAL
+/* #define USE_I2C */
 
 // #define MASTER_LEFT
 // #define MASTER_RIGHT
@@ -28,4 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Rows are doubled-up
 
 // wiring of each half (I'm a rebel)
+#undef MATRIX_COL_PINS
 #define MATRIX_COL_PINS { C6, D7, E6, B4, B5, D4 }
+#define MATRIX_COL_PINS_RIGHT { D4, B5, B4, E6, D7, C6 }
