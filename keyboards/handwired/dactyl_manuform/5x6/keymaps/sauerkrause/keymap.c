@@ -1,7 +1,7 @@
 /* A standard layout for the Dactyl Manuform 5x6 Keyboard */ 
 
 #include QMK_KEYBOARD_H
-
+#include "bit-c_led.h"
 
 #define _QWERTY 0
 #define _LOWER 1
@@ -47,3 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                _______,_______,            _______,_______
   ),
 };
+
+void keyboard_post_init_user(void) {
+  // after initialization turn off the LED
+  set_bit_c_LED(LED_OFF);
+}
