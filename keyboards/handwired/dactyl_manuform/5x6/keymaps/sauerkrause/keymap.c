@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-void keyboard_post_init_user(void) {
-  // after initialization turn off the LED
+void keyboard_pre_init_user(void) {
+  /* turn off the LED at the earliest convenience */
   set_bit_c_LED(LED_OFF);
 }
