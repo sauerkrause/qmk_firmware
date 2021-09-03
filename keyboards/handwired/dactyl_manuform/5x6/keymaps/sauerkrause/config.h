@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_I2C
 
 #undef DEBOUNCE
-#define DEBOUNCE 7
+#define DEBOUNCE 10
 
 // #define MASTER_LEFT
 // #define MASTER_RIGHT
